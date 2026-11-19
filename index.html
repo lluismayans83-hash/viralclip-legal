@@ -1,1 +1,56 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ViralClip</title><style>body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.6em}hr{margin:40px 0}a{color:#0a58ca}</style></head><body><h1>ViralClip</h1><p>Herramienta personal para crear vídeos verticales y publicarlos en mis propias cuentas de TikTok, Instagram y YouTube.</p><p>ViralClip usa los servicios de API de YouTube (YouTube API Services) para publicar vídeos en los canales de YouTube de su autor. / ViralClip uses YouTube API Services to publish videos to its author's own YouTube channels.</p><p><a href="privacidad.html">Política de privacidad / Privacy Policy</a> · <a href="condiciones.html">Condiciones de uso / Terms of Service</a></p></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/icono-32.png"><link rel="icon" type="image/png" sizes="192x192" href="img/icono-192.png"><link rel="apple-touch-icon" href="img/icono-180.png"><link rel="stylesheet" href="estilo.css">
+<title>ViralClip · Create and publish vertical videos to your own accounts</title>
+<meta name="description" content="ViralClip is a creator tool to make short vertical videos (stories, game clips, news) and publish them to the creator's own TikTok, Instagram and YouTube accounts.">
+<meta property="og:title" content="ViralClip"><meta property="og:image" content="img/icono-1024.png"></head><body>
+<header><div class="wrap"><a class="marca" href="./"><img src="img/icono-192.png" alt="ViralClip icon">ViralClip</a>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#examples">Examples</a><a href="#tiktok">TikTok integration</a><a href="#faq">FAQ</a><a href="es.html">Español</a></nav></div></header>
+<main class="wrap">
+<div class="hero"><div><h1>Create short vertical videos and publish them to your own accounts</h1>
+<p>ViralClip is a video creation and publishing tool for creators. It turns a script, a game recording or a news story into a finished 9:16 video with captions, music and a cover, and publishes it to the creator's own TikTok, Instagram and YouTube accounts.</p>
+<a class="btn" href="#how">How it works</a><a class="btn sec" href="#tiktok">TikTok integration</a></div>
+<img class="icono" src="img/icono-1024.png" alt="ViralClip app icon: an open door with warm light"></div>
+
+<section id="features"><h2>Features</h2><p class="intro">Everything a small creator team needs to go from an idea to a published short, in one place.</p>
+<div class="grid">
+<div class="card"><h3>Story videos</h3><p>Scripts become narrated stories with images, two voices, captions word by word and music chosen for the mood.</p></div>
+<div class="card"><h3>Game clips</h3><p>Records real gameplay of browser games in vertical format and edits it into challenge and highlight clips.</p></div>
+<div class="card"><h3>News shorts</h3><p>Verified news told as a short story with official images, flags, counters and quote cards.</p></div>
+<div class="card"><h3>Quality checks</h3><p>Every video is checked before publishing: loudness, safe area for each app, first-frame hook, cover and description.</p></div>
+<div class="card"><h3>Scheduling</h3><p>The same video goes out at the same time on every network, with a title, description and hashtags written for each one.</p></div>
+<div class="card"><h3>Analytics</h3><p>Views, retention and saves are collected from the creator's own accounts to learn which formats work best.</p></div>
+</div></section>
+
+<section id="how"><h2>How it works</h2><p class="intro">ViralClip runs on the creator's computer. The creator reviews every video before it goes out.</p>
+<div class="pasos">
+<div class="paso"><h3>Create</h3><p>Write or pick a script, record a game session or choose a news story. ViralClip builds the video: shots, captions, voice, music and cover.</p></div>
+<div class="paso"><h3>Review</h3><p>The creator watches the result, edits the title and description, and approves it. Nothing is published without approval.</p></div>
+<div class="paso"><h3>Connect the account</h3><p>The creator signs in with TikTok (Login Kit) and authorizes ViralClip for their own account. Instagram and YouTube use their official sign-in as well.</p></div>
+<div class="paso"><h3>Publish</h3><p>The video is uploaded to the creator's account: as a draft in the TikTok inbox to finish in the app, or posted directly with the caption and privacy level the creator selected.</p></div>
+<div class="paso"><h3>Measure</h3><p>After 48 hours and 7 days, ViralClip reads the video's statistics from the creator's account and shows what worked.</p></div>
+</div></section>
+
+<section id="examples"><h2>Examples</h2><p class="intro">Covers of videos made with ViralClip for our own channels.</p>
+<div class="ejemplos">
+<figure><img src="img/ej-historia.jpg" alt="Story video cover"><figcaption>Las Otras Noches · short fiction story</figcaption></figure>
+<figure><img src="img/ej-fizzplays.jpg" alt="Snake game challenge cover"><figcaption>FizzPlays · Snake Odyssey challenge</figcaption></figure>
+<figure><img src="img/ej-brickstorm.jpg" alt="Brickstorm game clip cover"><figcaption>FizzPlays · Brickstorm highlight</figcaption></figure>
+</div></section>
+
+<section id="tiktok"><h2>TikTok integration</h2><p class="intro">ViralClip uses TikTok for Developers only to publish the creator's own videos to the creator's own account.</p>
+<table><tr><th>Product / scope</th><th>What ViralClip does with it</th></tr>
+<tr><td>Login Kit · user.info.basic</td><td>Shows which TikTok account is connected (display name and avatar) so the creator knows where the video will go.</td></tr>
+<tr><td>Content Posting API · video.upload</td><td>Sends the finished video to the creator's TikTok inbox as a draft, to edit and post from the TikTok app.</td></tr>
+<tr><td>Content Posting API · video.publish</td><td>Posts the video directly to the creator's profile with the caption and privacy level chosen in ViralClip.</td></tr></table>
+<p class="intro" style="margin-top:18px">Access can be removed at any time from the TikTok app: Settings and privacy › Security › Manage app permissions. Read the <a href="privacidad.html">Privacy Policy</a> and the <a href="condiciones.html">Terms of Service</a>.</p></section>
+
+<section id="faq"><h2>FAQ</h2>
+<details><summary>Who uses ViralClip?</summary><p>ViralClip is used by its author and team to run their own channels: Las Otras Noches (stories), NoviralClip (news) and FizzPlays (browser games).</p></details>
+<details><summary>Does ViralClip post anything without my approval?</summary><p>No. Each video is reviewed and approved before it is uploaded or scheduled.</p></details>
+<details><summary>What data does ViralClip keep?</summary><p>Only what is needed to publish and measure: the access token of the connected account and the statistics of the videos it published. See the Privacy Policy.</p></details>
+<details><summary>Does ViralClip use YouTube API Services?</summary><p>Yes, to upload videos to the author's own YouTube channels. See the YouTube Terms of Service and the Google Privacy Policy, linked in our Privacy Policy.</p></details>
+</section>
+
+<section id="contact"><h2>Contact</h2><p class="intro">Questions about ViralClip, the data it uses or a takedown request: <a href="mailto:lluismayans83@gmail.com">lluismayans83@gmail.com</a>.</p></section>
+</main>
+<footer><div class="wrap"><span>© 2026 ViralClip</span><a href="privacidad.html">Privacy Policy</a><a href="condiciones.html">Terms of Service</a><a href="es.html">Español</a><a href="mailto:lluismayans83@gmail.com">Contact</a></div></footer>
+</body></html>
